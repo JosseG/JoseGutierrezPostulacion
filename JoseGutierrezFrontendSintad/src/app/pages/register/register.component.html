@@ -1,0 +1,31 @@
+
+
+<div class="grid justify-center align-middle bg-slate-500 h-full">
+    <section class="w-full max-w-xs self-center">
+        <div>
+            <form action="#" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" [formGroup]="formRegister"
+                (ngSubmit)="registrar()">
+    
+                <div class="text-center">
+                    Login</div>
+                <div>
+                    <label for="user">Usuario</label>
+                    <input
+                        class="shadow appearance-none border border-blue-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
+                        id="user" type="text" formControlName="username">
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                    <input
+                        class="shadow appearance-none border border-blue-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
+                        id="password" type="text" formControlName="password">
+                </div>
+                <button
+                    class="self-center w-full h-12 bg-blue-200 hover:bg-blue-700 text-white font-bold mx-0 py-2 px-0 rounded focus:outline-none focus:shadow-outline"
+                    type="submit">
+                
+                </button>
+            </form>
+        </div>
+    </section>
+</div>
